@@ -48,3 +48,5 @@ miniflux-epub [--outputfile=filename.epub]
 * Find image tags and pull the referenced images into the epub
 * Maybe be a bit less naive about the HTML Miniflux hands down, and its
   suitability for use in an epub?
+* Mark downloaded entries as read (maybe configurably?)
+* Store last downloaded entry, and only grab newer entries next time
