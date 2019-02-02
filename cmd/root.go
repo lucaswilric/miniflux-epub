@@ -49,7 +49,7 @@ Usage: miniflux-epub [--outputfile=filename.epub]
 		password := viper.GetString("Password")
 
 		// Connect to miniflux API with configured creds
-		fmt.Printf("Connecting to %s as %s", minifluxUrl, username)
+		fmt.Printf("Connecting to %s as %s\n", minifluxUrl, username)
 		mnflx := miniflux.New(minifluxUrl, username, password)
 
 		// Find the configured category
@@ -77,6 +77,7 @@ Usage: miniflux-epub [--outputfile=filename.epub]
 			Direction: "asc",
 		}
 
+		fmt.Println("Grabbing unread entries")
 		result, err := mnflx.Entries(&unreadFilter)
 		entries := result.Entries
 
