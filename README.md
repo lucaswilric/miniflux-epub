@@ -50,3 +50,11 @@ miniflux-epub [--outputfile=filename.epub]
   suitability for use in an epub?
 * Mark downloaded entries as read (maybe configurably?)
 * Store last downloaded entry, and only grab newer entries next time
+
+
+
+```mermaid
+graph LR
+
+Abacus --> Beancount
+```
